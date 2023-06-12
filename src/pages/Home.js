@@ -4,7 +4,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <div>
-      <h1>TRAVEL APP</h1>
+      <h1></h1>
     </div>
   );
 }

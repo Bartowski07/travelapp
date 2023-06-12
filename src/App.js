@@ -3,10 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
+import Hero from "./components/Hero";
 
 export default function App() {
   return (
     <div className="App">
+      <Hero />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
