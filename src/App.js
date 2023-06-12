@@ -2,6 +2,9 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { useState, useEffect } from "react";
+import Hero from "./components/Hero";
+import Navbar from "./components/navbar/Navbar";
+import Aboutus from "./components/aboutus/Aboutus";
 
 export default function App() {
   const tours = [
@@ -89,6 +92,9 @@ export default function App() {
 
   return (
     <div className="App">
+      <Navbar />
+      <Hero />
+      <Aboutus />
       <Routes>
         <Route path="/" element={<Home tours={tours} />} />
       </Routes>
