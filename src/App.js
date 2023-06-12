@@ -4,24 +4,88 @@ import Home from "./pages/Home";
 import { useState, useEffect } from "react";
 
 export default function App() {
-  const [tours, setTours] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("https://backend-crossover.onrender.com/tours");
-        if (!res.ok) {
-          throw new Error(res.error);
-        }
-        const parseRes = await res.json();
-        console.log(parseRes);
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const tours = [
+    {
+      title: "Immerse into Falls",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "2",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "3",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "4",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "Immerse into Falls",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "Immerse into Falls",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "5",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "6",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "7",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+    {
+      title: "8",
+      rating: 4.5,
+      price: 500,
+      description:
+        "Enjoy a guided tour of the Canadian side of Niagara Falls. Experience the mighty waterfalls with stunning views of both the American Falls and the Horseshoe Falls. See the power of Niagara up close, onboard the Hornblower Niagara Cruises boat ride Voyage to the Falls.",
+      url: "https://www.niagarafallslive.com/wp-content/uploads/2021/02/beautiful-niagara-falls.jpg",
+    },
+  ];
 
   return (
     <div className="App">
