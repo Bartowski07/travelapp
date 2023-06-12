@@ -6,10 +6,7 @@ import Aboutus from "../components/aboutus/Aboutus";
 export default function Home() {
   return (
     <div>
-      
-      <ResponsiveAppBar />
-      <Aboutus />
-      <h1>TRAVEL APP</h1>
+
     </div>
   );
 }
