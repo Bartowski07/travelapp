@@ -35,7 +35,7 @@ function Aboutus(){
 
                 </p>
                 
-                <Button style={{backgroundColor:"orange", margin:"0 20px"}} variant="contained">Find Destinations</Button>
+                <Button style={{backgroundColor:"#4caf50", margin:"0 20px"}} variant="contained">Find Destinations</Button>
                 <Button className='btn btn2' variant="outlined">Watch Videos</Button>
             </div>
         </Stack>
