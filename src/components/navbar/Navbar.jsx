@@ -5,13 +5,12 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+
 
 const pages = ['Discover', 'Deals', 'Community', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -39,7 +38,6 @@ function ResponsiveAppBar() {
     <AppBar position="static" style={{backgroundColor:"white", boxShadow:"none"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -67,7 +65,7 @@ function ResponsiveAppBar() {
               onClick={handleOpenNavMenu}
               color="black"
             >
-              <MenuIcon />
+            
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -94,8 +92,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
+           <Typography
             variant="h5"
             noWrap
             component="a"
@@ -129,7 +126,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
           
             <Button variant="contained" style={{backgroundColor:"transparent" , color:"black", border:"solid 1px whitesmoke", margin:"0px 10px", borderRadius:"5px"}}>Register</Button>
-            <Button variant="outlined" style={{backgroundColor:"orange" , color:"white", border:"solid 1px whitesmoke", borderRadius:"10px"}}>Sign In</Button>
+            <Button variant="outlined" style={{backgroundColor:"#4caf50" , color:"white", border:"solid 1px whitesmoke", borderRadius:"5px"}}>Sign In</Button>
           </Box>
         </Toolbar>
       </Container>
