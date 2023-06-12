@@ -26,8 +26,11 @@ p{
     padding: 15px 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 25px;
-    height: 25vh;
-    width: 400px;
+    
+    max-height: 25vh;
+    max-width: 40%;
+    min-width: min-content;
+    
     background-color: rgb(255, 255, 255);
 }
 .user{

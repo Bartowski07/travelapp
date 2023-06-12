@@ -1,14 +1,18 @@
-import Stack from '@mui/material/Stack';
+import { Stack, useMediaQuery } from '@mui/material';
 import Rating from '@mui/material/Rating';
 import "./Aboutus.css";
 import Button from '@mui/material/Button';
 
 
 function Aboutus(){
-
+    const isScreenSmall = useMediaQuery('(max-width: 900px)');
 
     return(
-        <Stack className='content' direction="row" spacing={10}>
+        <Stack
+        className='content'
+        direction={isScreenSmall ? 'column' : 'row'}
+        spacing={10}
+      >
             <div>
                 <img style={{borderRadius:"25px", width:"100%"}} className='aboutusImage' src='https://e1.pxfuel.com/desktop-wallpaper/266/652/desktop-wallpaper-travel-life-cartoon-travel.jpg' />
                 <div className='review'>
@@ -35,6 +39,6 @@ function Aboutus(){
                 <Button className='btn btn2' variant="outlined">Watch Videos</Button>
             </div>
         </Stack>
-    )
+    );
 
 }export default Aboutus
